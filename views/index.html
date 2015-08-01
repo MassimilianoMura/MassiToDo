@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app"todoApp">
+<html lang="en" ng-app="todoApp">
 <head>
   <meta charset="utf-8">
 
@@ -12,9 +12,25 @@
   <script src="public/javascripts/todoAppController.js"></script>
 </head>
 
-<body>
 
-  <h1>Testing my awesome server</h1>
+<body ng-controller="MainController as MainCtrl">
+
+  <header> {{ MainCtrl.title }} </header>
+
+  <section id="main">
+
+    <div id="add">
+      <form id="todo-form" ng-submit="addTodo()">
+          <input id="new-todo" placeholder="What needs to be done?" ng-model="newTodo" autofocus>
+      </form>
+    </div>
+
+    <div id="list"></div>
+
+  </section>
+
+  <footer></footer>
+
 
 </body>
 
