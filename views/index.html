@@ -13,7 +13,7 @@
 </head>
 
 
-<body ng-controller="MainController as MainCtrl">
+<body ng-controller="MainController as mainCtrl">
 
   <header> {{ MainCtrl.title }} </header>
 
@@ -21,11 +21,18 @@
 
     <div id="add">
       <form id="todo-form" ng-submit="addTodo()">
-          <input id="new-todo" placeholder="What needs to be done?" ng-model="newTodo" autofocus>
+          <input id="newTodoDescription" placeholder="What needs to be done?" type="text" ng-model="newTodoDescription" name="text" autofocus>
+          <button id="addTodo" >Add</button>
       </form>
     </div>
 
-    <div id="list"></div>
+    <div id="list">
+        <ul>
+      <li ng-repeat="task in tasks" class="todoText">
+          {{ task.description }}
+      </li>
+  </ul>
+    </div>
 
   </section>
 
