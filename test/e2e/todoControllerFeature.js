@@ -35,7 +35,7 @@ describe('Massi todo app', function() {
   //   console.log(list.last());
   // });
 
-  it('increase the number of task when user add a new one', function(){
+  it('increase the number of task count when user add a new one', function(){
     taskBox.sendKeys('my new todo').sendKeys(protractor.Key.ENTER);
     expect(element(by.id('taskCount')).getText()).toEqual('Total Tasks: 3');
   });
