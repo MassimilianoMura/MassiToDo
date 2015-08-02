@@ -4,7 +4,7 @@ todoApp.controller('MainController', function($scope) {
 
   var self = this;
 
-  self.title = "Yours todo list... add something, don't be lazy"
+  self.title = "Yours todo list... add something, don't be lazy";
 
   var tasks = {}
 
