@@ -1,7 +1,8 @@
 describe('Massi todo app', function() {
 
   var taskBox = element(by.model('newTodoDescription'));
-  var enter = browser.actions().sendKeys(protractor.Key.ENTER);
+
+  var list =element.all(by.repeater('task in tasks'));
 
   var tasks = {}
 
@@ -14,15 +15,11 @@ describe('Massi todo app', function() {
     expect(browser.getTitle()).toEqual('MassiToDo');
   });
 
-  it('can add and display a task', function() {
-    taskBox.sendKeys('do the weekend challenge');
-    element(by.id('addTodo')).click();
 
-    // expect(element.all(by.binding('task.description')).getAttribute('value')).toContain('do the weekend challenge');
-    expect(element.all(by.repeater('task in tasks')).getAttribute('value')).toContain('do the weekend challenge');
-
-
-    // expect(tasks.description.first().getText()).toContain('do the weekend challenge');
+  it('can add and display a new task', function() {
+    taskBox.sendKeys('my new todo').sendKeys(protractor.Key.ENTER);
+    expect(list.last().getText()).toEqual('my new todo')
   });
+
 
 });

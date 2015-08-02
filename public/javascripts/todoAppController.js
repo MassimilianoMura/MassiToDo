@@ -4,7 +4,7 @@ todoApp.controller('MainController', function($scope) {
 
   var self = this;
 
-  self.title = 'Some title';
+  self.title = "Yours todo list... add something, don't be lazy"
 
   var tasks = {}
 
@@ -26,7 +26,6 @@ todoApp.controller('MainController', function($scope) {
     });
     $scope.newTodoDescription = '';
   }
-
 
 
   $scope.clearFinishedTodos = function () {

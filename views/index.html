@@ -18,13 +18,13 @@
 
 <body ng-controller="MainController as mainCtrl">
 
-  <header> {{ MainCtrl.title }} </header>
+  <header> {{ mainCtrl.title }} </header>
 
   <section id="main">
 
     <div id="add">
       <form id="todo-form" ng-submit="addTodo()">
-          <input id="newTodoDescription" placeholder="What needs to be done?" type="text" ng-model="newTodoDescription" name="text" autofocus>
+          <input id="newTodoDescription" placeholder="do something!!!" type="text" ng-model="newTodoDescription" name="text" required>
           <button id="addTodo" class="btn">Add</button>
       </form>
     </div>
