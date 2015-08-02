@@ -33,6 +33,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components', express.static(path.join(__dirname, 'bower_components')));
 app.use('/public/javascripts', express.static(path.join(__dirname, '/public/javascripts')));
 
+app.use('/public/stylesheets', express.static(path.join(__dirname, '/public/stylesheets')));
+
 
 app.use('/', routes);
 app.use('/users', users);

@@ -25,7 +25,13 @@ todoApp.controller('MainController', function($scope) {
       done: false
     });
     $scope.newTodoDescription = '';
-}
+  }
+
+
+
+  $scope.clearFinishedTodos = function () {
+      $scope.tasks = _.filter($scope.tasks, function (todo) {return !todo.done})
+  }
 
 });
 
