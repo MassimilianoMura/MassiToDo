@@ -18,24 +18,27 @@
 
 <body ng-controller="MainController as mainCtrl">
 
-  <header> {{ mainCtrl.title }} </header>
+  <header><h1> {{ mainCtrl.title }} </h1> </header>
 
   <section id="main">
 
     <div id="add">
       <form id="todo-form" ng-submit="addTodo()">
           <input id="newTodoDescription" placeholder="do something!!!" type="text" ng-model="newTodoDescription" name="text" required>
-          <button id="addTodo" class="btn">Add</button>
+          <button id="addTodo" class="btn">Add a new task</button>
       </form>
     </div>
 
     <div id="list" >
         <ul style="list-style-type:none">
-      <li ng-repeat="task in tasks" class="todoText" class="inline">
+      <li ng-repeat="task in tasks | filter:filterCriteria " class="todoText" class="inline">
           <input class='checkbox inline' type="checkbox" ng-model="task.done" >  <span class="done-{{task.done}}"> {{ task.description }} </span>
       </li>
   </ul>
 
+  <button class="btn" id="displayActiveTasksButton" ng-click="filterCriteria = none">Display All Tasks</button>
+  <button class="btn" id="displayActiveTasksButton" ng-click="filterCriteria = {done:false}">Display Active Tasks</button>
+  <button class="btn" id="displayCompleteTasksButton" ng-click="filterCriteria = {done:true}">Display Complete Tasks</button>
   <button id="delete_Button" class="btn" ng-click="clearFinishedTodos()">Clear completed</button>
     </div>
 
