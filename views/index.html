@@ -30,6 +30,11 @@
       </form>
     </div>
 
+
+    <div ng-show="tasks.length > 0" id="taskCount" >
+      Total Tasks: <span id="counter">{{ tasks.length }}</span>
+    </div>
+
     <div>
 
         <ul id="list" style="list-style-type:none">

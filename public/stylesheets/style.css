@@ -22,6 +22,7 @@ h1 {
   font-size: 20px;
   line-height: 1.4em;
   padding: 6px;
+  margin-bottom: 30px;
 }
 
 #list {
@@ -40,6 +41,10 @@ margin-left: 500px;
 
 #main {
   text-align: center;
+}
+
+#counter {
+  padding: 5px;
 }
 
 
