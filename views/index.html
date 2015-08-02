@@ -5,6 +5,7 @@
 
   <title>MassiToDo</title>
 
+
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="public/stylesheets/style.css">
   <script src="bower_components/underscore/underscore.js"></script>
@@ -29,23 +30,22 @@
       </form>
     </div>
 
-    <div id="list" >
-        <ul style="list-style-type:none">
-      <li ng-repeat="task in tasks | filter:filterCriteria " class="todoText" class="inline">
-          <input class='checkbox inline' type="checkbox" ng-model="task.done" >  <span class="done-{{task.done}}"> {{ task.description }} </span>
-      </li>
-  </ul>
+    <div>
 
-  <button class="btn" id="displayActiveTasksButton" ng-click="filterCriteria = none">Display All Tasks</button>
-  <button class="btn" id="displayActiveTasksButton" ng-click="filterCriteria = {done:false}">Display Active Tasks</button>
-  <button class="btn" id="displayCompleteTasksButton" ng-click="filterCriteria = {done:true}">Display Complete Tasks</button>
-  <button id="delete_Button" class="btn" ng-click="clearFinishedTodos()">Clear completed</button>
+        <ul id="list" style="list-style-type:none">
+          <li ng-repeat="task in tasks | filter:filterCriteria " class="todoText" class="inline">
+          <input class='checkbox inline' type="checkbox" ng-model="task.done" >  <span class="done-{{task.done}}"> {{ task.description }} </span>
+          </li>
+        </ul>
+
+        <button class="btn" id="displayActiveTasksButton" ng-click="filterCriteria = none">Display All Tasks</button>
+        <button class="btn" id="displayActiveTasksButton" ng-click="filterCriteria = {done:false}">Display Active Tasks</button>
+        <button class="btn" id="displayCompleteTasksButton" ng-click="filterCriteria = {done:true}">Display Complete Tasks</button>
+        <button id="delete_Button" class="btn" ng-click="clearFinishedTodos()">Clear completed</button>
+
     </div>
 
   </section>
-
-  <footer></footer>
-
 
 </body>
 
