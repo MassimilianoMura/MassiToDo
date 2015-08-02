@@ -9,3 +9,7 @@ body {
   text-decoration: line-through;
 }
 
+.inline {
+  display: inline;
+}
+
