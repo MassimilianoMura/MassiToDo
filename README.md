@@ -1,5 +1,7 @@
 # MassiTodo
 
+[![Code Climate](https://codeclimate.com/github/MassimilianoMura/MassiToDo/badges/gpa.svg)](https://codeclimate.com/github/MassimilianoMura/MassiToDo)
+
 readme under costruction
 
 ####User stories:
