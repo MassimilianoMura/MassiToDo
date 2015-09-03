@@ -2,7 +2,7 @@
 
 ####User stories:
  
-```sh
+```
 As a forgetful person
 I want to store my tasks
 So that I don't forget them
