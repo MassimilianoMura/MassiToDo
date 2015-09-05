@@ -9,8 +9,9 @@ before_script:
   - npm i
   - bower install
   - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
   - npm start &
   - sleep 5
-  - webdriver-manager update --standalone
+  - webdriver-manager update --standalone --firefox
   - webdriver-manager start -passthru &
   - sleep 5
