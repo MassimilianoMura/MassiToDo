@@ -1,11 +1,15 @@
 # MassiTodo
 
 [![Code Climate](https://codeclimate.com/github/MassimilianoMura/MassiToDo/badges/gpa.svg)](https://codeclimate.com/github/MassimilianoMura/MassiToDo)
+[![Code Climate](https://travis-ci.org/MassimilianoMura/MassiToDo.svg)](https://travis-ci.org/MassimilianoMura/MassiToDo)
 
-readme under costruction
+# Getting started
+- `npm i & npm i -g protractor` to install the dependencies
+- `npm start` to start the application
+- `npm test` (after starting the server in a separate window) to run Protractor tests
 
 ####User stories:
- 
+
 ```
 As a forgetful person
 I want to store my tasks

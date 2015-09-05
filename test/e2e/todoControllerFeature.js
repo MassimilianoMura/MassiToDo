@@ -9,7 +9,7 @@ describe('Massi todo app', function() {
 
   beforeEach(function () {
   browser.ignoreSynchronization = true;
-  browser.get('http://localhost:8000');
+  browser.get('http://localhost:3000');
   });
 
   it('has a title', function() {
