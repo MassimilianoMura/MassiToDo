@@ -1,5 +1,4 @@
 script:
-#  - npm test
   - protractor test/e2e/conf.js --browser=firefox
 language: node_js
 node_js:
