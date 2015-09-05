@@ -1,5 +1,5 @@
 script:
-  - npm test --single-run
+  - npm test
 #  - node_modules/.bin/protractor e2e/conf.js --browser=firefox
 language: node_js
 node_js:
@@ -7,4 +7,6 @@ node_js:
 before_script:
   - npm i -g bower
   - npm i
+  - bower install
   - "export DISPLAY=:99.0"
+  - npm start

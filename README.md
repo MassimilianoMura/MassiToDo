@@ -4,7 +4,7 @@
 [![Code Climate](https://travis-ci.org/MassimilianoMura/MassiToDo.svg)](https://travis-ci.org/MassimilianoMura/MassiToDo)
 
 # Getting started
-- `npm i & npm i -g protractor` to install the dependencies
+- `npm i & npm i -g protractor bower & bower install` to install the dependencies
 - `npm start` to start the application
 - `npm test` (after starting the server in a separate window) to run Protractor tests
 

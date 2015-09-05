@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "preinstall": "bower install",
     "start": "node ./bin/www",
     "test": "protractor test/e2e/conf.js"
   },
