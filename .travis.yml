@@ -11,3 +11,5 @@ before_script:
   - "export DISPLAY=:99.0"
   - npm start &
   - sleep 5
+  - webdriver-manager start -passthru &
+  - sleep 5
