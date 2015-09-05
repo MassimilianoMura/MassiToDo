@@ -9,4 +9,4 @@ before_script:
   - npm i
   - bower install
   - "export DISPLAY=:99.0"
-  - npm start
+  - npm start > /dev/null &
