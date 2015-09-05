@@ -1,5 +1,5 @@
-# MassiTodo
-===========
+MassiTodo
+=========
 
 This is a Todo app using Node.js, Angular.js, Protractor.
 Demo here: [massi-todo.herokuapp.com](http://massi-todo.herokuapp.com/).
