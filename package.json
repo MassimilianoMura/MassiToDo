@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install",
     "start": "node ./bin/www",
     "test": "protractor test/e2e/conf.js"
   },
@@ -18,6 +19,7 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "bower": "1.5.2",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.3",
     "karma-chrome-launcher": "^0.2.0",
