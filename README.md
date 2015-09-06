@@ -5,7 +5,7 @@ This is a Todo app using Node.js, Angular.js, Protractor.
 Demo here: [massi-todo.herokuapp.com](http://massi-todo.herokuapp.com/).
 
 [![Code Climate](https://codeclimate.com/github/MassimilianoMura/MassiToDo/badges/gpa.svg)](https://codeclimate.com/github/MassimilianoMura/MassiToDo)
-[![Code Climate](https://travis-ci.org/MassimilianoMura/MassiToDo.svg)](https://travis-ci.org/MassimilianoMura/MassiToDo)
+[![Travis](https://travis-ci.org/MassimilianoMura/MassiToDo.svg)](https://travis-ci.org/MassimilianoMura/MassiToDo)
 
 # Getting started
 - `npm i & npm i -g protractor bower & bower install` to install the dependencies
